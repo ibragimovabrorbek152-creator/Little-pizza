@@ -1,0 +1,17 @@
+# Local editor settings
+.vscode/
+
+# Secrets and local environment configuration
+.env
+.env.*
+!.env.example
+
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
