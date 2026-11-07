@@ -1,291 +1,73 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#651d24">
-  <meta name="description"
-    content="A website concept for Little Pizza Parlor in Brooklyn. Explore handcrafted pizza, a sample menu, and the restaurant's existing online ordering page.">
+  <meta name="theme-color" content="#5b1821">
+  <meta name="description" content="Little Pizza Parlor in Brooklyn: handcrafted pizza, salads, appetizers, and more. Independent website concept; orders are not transmitted from this demo.">
   <title>Little Pizza Parlor — Good Pizza. Great Moments.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="concept-note">Independent website concept · Menu, prices & contact details shown for demonstration</div>
+  <div class="concept-bar">Independent website concept <span aria-hidden="true">·</span> Demo checkout only; orders are not sent to the restaurant</div>
   <header class="site-header" id="top">
     <nav class="nav wrap" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="Little Pizza Parlor home"><span class="brand-mark"
-          aria-hidden="true">LP</span><span class="brand-name">LITTLE PIZZA<br><i>PARLOR</i></span></a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links"
-        aria-label="Open navigation"><span></span><span></span></button>
+      <a class="brand" href="#top" aria-label="Little Pizza Parlor home"><span class="brand-mark" aria-hidden="true">LP</span><span class="brand-name">LITTLE PIZZA<br><i>PARLOR</i></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span></button>
       <div class="nav-links" id="nav-links">
-        <a href="#top">Home</a><a href="#menu">Menu</a><a href="#story">Our Story</a><a href="#gallery">Gallery</a><a
-          href="#contact">Contact</a>
-        <a class="button button-small button-red" href="https://order.toasttab.com/online/littlepizzaparlor"
-          target="_blank" rel="noopener noreferrer">Order Online <span aria-hidden="true">↗</span></a>
+        <a href="#top">Home</a><a href="#menu">Menu</a><a href="#story">Our Story</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+        <a class="button button-small button-red" href="#menu">Explore Menu <span aria-hidden="true">↓</span></a>
+        <button class="cart-trigger" type="button" aria-label="Open shopping bag" aria-controls="cart-drawer" aria-expanded="false"><svg class="cart-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span>Bag</span><span class="cart-count" aria-live="polite">0</span></button>
       </div>
     </nav>
   </header>
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-image" role="img" aria-label="Freshly baked pizza topped with basil"></div>
+      <img class="hero-image" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=2200&q=88" alt="A freshly baked pizza ready to share" fetchpriority="high">
       <div class="hero-shade"></div>
-      <div class="hero-content wrap">
-        <p class="eyebrow light">BROOKLYN, NEW YORK · PIZZA FOR EVERY MOMENT</p>
-        <h1 id="hero-title">Good Pizza.<br><em>Great Moments.</em></h1>
-        <p class="hero-copy">Fresh ingredients, handcrafted pizzas, and unforgettable flavors.</p>
-        <div class="hero-actions"><a class="button button-gold" href="#menu">Explore Our Menu <span>↓</span></a><a
-            class="text-link light-link" href="https://order.toasttab.com/online/littlepizzaparlor" target="_blank"
-            rel="noopener noreferrer">Order Online <span>↗</span></a></div>
-      </div>
-      <div class="hero-caption"><span>MADE TO BE SHARED</span><span>01 / 05</span></div>
+      <div class="hero-content wrap"><p class="eyebrow light">BROOKLYN, NEW YORK <span>·</span> PIZZA FOR EVERY MOMENT</p><h1 id="hero-title">Good Pizza.<br><em>Great Moments.</em></h1><p class="hero-copy">Fresh ingredients, handcrafted pizzas, and unforgettable flavors.</p><div class="hero-actions"><a class="button button-gold" href="#menu">Explore the Menu <span>↓</span></a><button class="text-link light-link" type="button" data-open-cart>Start an Order <span>↗</span></button></div></div>
+      <div class="hero-caption"><span>MADE TO BE SHARED</span><span>GOOD THINGS ARE GATHERING</span></div>
       <div class="hero-stamp" aria-hidden="true"><span>BUON</span><b>APPETITO</b><i>✳</i></div>
     </section>
     <section class="intro section-pad wrap reveal" id="story">
-      <div class="intro-image image-frame"><img
-          src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=85"
-          alt="A pizza ready to share at the table" loading="lazy"><span class="image-label">A TABLE IS ALWAYS BETTER
-          TOGETHER</span></div>
-      <div class="intro-copy">
-        <p class="eyebrow">A NEIGHBORHOOD KIND OF PLACE</p>
-        <h2>A Little Slice<br>of Italy <em>in Brooklyn</em></h2>
-        <p>There’s something special about gathering around a good pizza. Little Pizza Parlor brings that easy,
-          welcoming feeling to the table, with handcrafted pies and familiar favorites made for sharing.</p>
-        <p>Come by for a quick slice or settle in for a little longer. There’s always room for one more.</p><a
-          class="text-link dark-link" href="#contact">Come say hello <span>→</span></a>
-      </div>
+      <div class="intro-image image-frame"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=85" alt="Pizza served for a shared meal" loading="lazy"><span class="image-label">A TABLE IS ALWAYS BETTER TOGETHER</span></div>
+      <div class="intro-copy"><p class="eyebrow">A NEIGHBORHOOD KIND OF PLACE</p><h2>A Little Slice<br>of Italy <em>in Brooklyn</em></h2><p>There’s something special about gathering around a good pizza. Little Pizza Parlor brings that easy, welcoming feeling to the table, with pies and familiar favorites made for sharing.</p><p>Come by for a quick slice or settle in for a little longer. There’s always room for one more.</p><a class="text-link dark-link" href="#contact">Find us in Brooklyn <span>→</span></a></div>
     </section>
     <section class="menu-section section-pad" id="menu">
       <div class="wrap">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow">A FEW HOUSE FAVORITES</p>
-            <h2>Made for the <em>middle</em><br>of the table.</h2>
-          </div>
-          <p class="section-note">A little something for everyone.<br><small>Sample items and prices shown for concept
-              purposes; please verify before publishing.</small></p>
-        </div>
-        <div class="filter-row" role="group" aria-label="Filter menu by category"><button class="filter active"
-            data-filter="all" aria-pressed="true">All</button><button class="filter" data-filter="signature"
-            aria-pressed="false">Signature Pizzas</button><button class="filter" data-filter="classic"
-            aria-pressed="false">Classic Pizzas</button><button class="filter" data-filter="appetizers"
-            aria-pressed="false">Appetizers</button><button class="filter" data-filter="salads"
-            aria-pressed="false">Salads</button><button class="filter" data-filter="drinks"
-            aria-pressed="false">Drinks</button></div>
-        <div class="menu-grid">
-          <article class="dish-card reveal" data-category="signature">
-            <div class="dish-photo"><img
-                src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80"
-                alt="Basil and tomato pizza" loading="lazy"><span class="dish-type">SIGNATURE</span></div>
-            <div class="dish-info">
-              <div class="dish-title">
-                <h3>Sunday Best</h3><span>$18</span>
-              </div>
-              <p>Tomato, mozzarella, basil, a little olive oil.</p><a
-                href="https://order.toasttab.com/online/littlepizzaparlor" target="_blank" rel="noopener noreferrer"
-                class="dish-order">Order this pie <span>↗</span></a>
-            </div>
-          </article>
-          <article class="dish-card reveal" data-category="signature">
-            <div class="dish-photo"><img
-                src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=700&q=80"
-                alt="Pepperoni pizza fresh from the oven" loading="lazy"><span class="dish-type">SIGNATURE</span></div>
-            <div class="dish-info">
-              <div class="dish-title">
-                <h3>Red Hot</h3><span>$20</span>
-              </div>
-              <p>Pepperoni, mozzarella, tomato, chili honey.</p><a
-                href="https://order.toasttab.com/online/littlepizzaparlor" target="_blank" rel="noopener noreferrer"
-                class="dish-order">Order this pie <span>↗</span></a>
-            </div>
-          </article>
-          <article class="dish-card reveal" data-category="classic">
-            <div class="dish-photo"><img
-                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80"
-                alt="Classic cheese pizza with golden crust" loading="lazy"><span class="dish-type">CLASSIC</span></div>
-            <div class="dish-info">
-              <div class="dish-title">
-                <h3>Plain Jane</h3><span>$16</span>
-              </div>
-              <p>Our demo classic: tomato, mozzarella, oregano.</p><a
-                href="https://order.toasttab.com/online/littlepizzaparlor" target="_blank" rel="noopener noreferrer"
-                class="dish-order">Order this pie <span>↗</span></a>
-            </div>
-          </article>
-          <article class="dish-card reveal" data-category="appetizers">
-            <div class="dish-photo"><img
-                src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=80"
-                alt="Crisp pizza slices ready to serve" loading="lazy"><span class="dish-type">APPETIZER</span></div>
-            <div class="dish-info">
-              <div class="dish-title">
-                <h3>Garlic Knots</h3><span>$8</span>
-              </div>
-              <p>Golden knots, garlic butter, parmesan, herbs.</p><a
-                href="https://order.toasttab.com/online/littlepizzaparlor" target="_blank" rel="noopener noreferrer"
-                class="dish-order">Order a side <span>↗</span></a>
-            </div>
-          </article>
-          <article class="dish-card reveal" data-category="salads">
-            <div class="dish-photo"><img
-                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80"
-                alt="Fresh greens and colorful vegetables" loading="lazy"><span class="dish-type">SALAD</span></div>
-            <div class="dish-info">
-              <div class="dish-title">
-                <h3>Market Greens</h3><span>$12</span>
-              </div>
-              <p>Seasonal greens, shaved vegetables, house vinaigrette.</p><a
-                href="https://order.toasttab.com/online/littlepizzaparlor" target="_blank" rel="noopener noreferrer"
-                class="dish-order">Order a salad <span>↗</span></a>
-            </div>
-          </article>
-          <article class="dish-card reveal" data-category="drinks">
-            <div class="dish-photo"><img
-                src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=80"
-                alt="Refreshing drinks served over ice" loading="lazy"><span class="dish-type">DRINK</span></div>
-            <div class="dish-info">
-              <div class="dish-title">
-                <h3>Something Sparkling</h3><span>$5</span>
-              </div>
-              <p>A bright, bubbly sip to go with your slice.</p><a
-                href="https://order.toasttab.com/online/littlepizzaparlor" target="_blank" rel="noopener noreferrer"
-                class="dish-order">Browse drinks <span>↗</span></a>
-            </div>
-          </article>
-        </div>
-        <p class="menu-footnote">Menu items and prices are illustrative demo content and may not reflect the
-          restaurant’s current offerings.</p>
+        <div class="section-heading reveal"><div><p class="eyebrow">MADE FOR THE MIDDLE OF THE TABLE</p><h2>Find your <em>favorite.</em></h2></div><p class="section-note">Pies, sides, and a little something sweet.<br><small>Menu and prices provided for this independent concept. Please confirm details with the restaurant.</small></p></div>
+        <div class="menu-toolbar"><div class="filter-row" role="group" aria-label="Filter menu by category">
+          <button class="filter active" type="button" data-filter="all" aria-pressed="true">All</button><button class="filter" type="button" data-filter="featured" aria-pressed="false">Featured Items</button><button class="filter" type="button" data-filter="large" aria-pressed="false">Large Pizzas</button><button class="filter" type="button" data-filter="medium" aria-pressed="false">Medium Pizzas</button><button class="filter" type="button" data-filter="salads" aria-pressed="false">Salads</button><button class="filter" type="button" data-filter="appetizers" aria-pressed="false">Appetizers &amp; Dippers</button><button class="filter" type="button" data-filter="beverages" aria-pressed="false">Beverages</button><button class="filter" type="button" data-filter="desserts" aria-pressed="false">Desserts</button><button class="filter" type="button" data-filter="utensils" aria-pressed="false">Utensils</button>
+        </div><label class="search-box"><span class="sr-only">Search menu</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="menu-search" type="search" placeholder="Search the menu" autocomplete="off"><kbd>⌕</kbd></label></div>
+        <div class="category-note" id="category-note" aria-live="polite"></div>
+        <div class="menu-grid" id="menu-products" aria-live="polite"></div>
+        <div class="utensil-note" id="utensil-note" hidden><p class="eyebrow">UTENSILS</p><h3>Here when you need them.</h3><p>Plastic Fork/Knive · Napkins · Paper Plates</p><small>Price and availability weren’t provided. These are shown for reference only and cannot be added to the cart.</small></div>
+        <p class="menu-footnote">Illustrative product photography; images are representative and are not official Little Pizza Parlor photos. Menu descriptions and prices are supplied for this concept.</p>
       </div>
     </section>
-    <section class="feature-pizza section-pad">
-      <div class="feature-inner wrap reveal">
-        <div class="feature-photo"><img
-            src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1200&q=85"
-            alt="A golden, bubbling pizza with fresh toppings" loading="lazy"><span class="photo-note">A GOOD ONE TO
-            PASS AROUND</span></div>
-        <div class="feature-copy">
-          <p class="eyebrow light">THE PIE IN THE SPOTLIGHT</p>
-          <h2>Meet your new<br><em>favorite slice.</em></h2>
-          <p>Golden edges, bubbling cheese, and all the good stuff in between. This featured pie is a little love letter
-            to pizza night.</p><a class="button button-cream" href="https://order.toasttab.com/online/littlepizzaparlor"
-            target="_blank" rel="noopener noreferrer">Order Online <span>↗</span></a><span
-            class="feature-disclaimer">Illustrative menu concept · Details to be confirmed</span>
-        </div><span class="feature-spark" aria-hidden="true">✳</span>
-      </div>
-    </section>
-    <section class="values section-pad wrap">
-      <div class="section-heading centered reveal">
-        <p class="eyebrow">THE GOOD STUFF</p>
-        <h2>Pizza with a little <em>heart.</em></h2>
-      </div>
-      <div class="value-grid">
-        <article class="value-card reveal"><span class="value-icon">✳</span>
-          <h3>Fresh Ingredients</h3>
-          <p>Good things start with thoughtful ingredients.</p>
-        </article>
-        <article class="value-card reveal"><span class="value-icon">◉</span>
-          <h3>Handcrafted Pizza</h3>
-          <p>Made by hand, then passed around the table.</p>
-        </article>
-        <article class="value-card reveal"><span class="value-icon">♡</span>
-          <h3>Delicious Flavors</h3>
-          <p>Comforting classics and bright, savory bites.</p>
-        </article>
-        <article class="value-card reveal"><span class="value-icon">☼</span>
-          <h3>Made With Passion</h3>
-          <p>A little care goes a long way in every slice.</p>
-        </article>
-      </div>
-    </section>
-    <section class="gallery-section section-pad" id="gallery">
-      <div class="wrap">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow">A LITTLE LOOK AROUND</p>
-            <h2>Good things, <em>up close.</em></h2>
-          </div>
-          <p class="section-note">From first slice to last bite.</p>
-        </div>
-        <div class="gallery-grid">
-          <button class="gallery-item gallery-tall"
-            data-full="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1500&q=90"
-            aria-label="View pizza with basil"><img
-              src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=900&q=80"
-              alt="Fresh pizza topped with basil" loading="lazy"><span>THE FIRST SLICE ↗</span></button>
-          <button class="gallery-item"
-            data-full="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1400&q=90"
-            aria-label="View pepperoni pizza"><img
-              src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=800&q=80"
-              alt="Pepperoni pizza with a crisp crust" loading="lazy"><span>OUT OF THE OVEN ↗</span></button>
-          <button class="gallery-item"
-            data-full="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1400&q=90"
-            aria-label="View cheese pizza"><img
-              src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
-              alt="Cheesy pizza cut into slices" loading="lazy"><span>PASS IT AROUND ↗</span></button>
-          <button class="gallery-item"
-            data-full="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1400&q=90"
-            aria-label="View pizza on a wooden board"><img
-              src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80"
-              alt="Pizza on a wooden serving board" loading="lazy"><span>MADE TO SHARE ↗</span></button>
-          <button class="gallery-item"
-            data-full="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1400&q=90"
-            aria-label="View fresh salad"><img
-              src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80"
-              alt="Fresh colorful ingredients" loading="lazy"><span>THE FRESH STUFF ↗</span></button>
-        </div>
-      </div>
-    </section>
-    <section class="contact-section section-pad" id="contact">
-      <div class="wrap contact-wrap">
-        <div class="contact-copy reveal">
-          <p class="eyebrow light">COME ON BY</p>
-          <h2>Let’s make it<br><em>a pizza night.</em></h2>
-          <p>Planning a visit? Check the restaurant’s current details before heading over. The placeholders below need
-            verification for this concept.</p><a class="button button-gold"
-            href="https://order.toasttab.com/online/littlepizzaparlor" target="_blank" rel="noopener noreferrer">Order
-            Online <span>↗</span></a>
-        </div>
-        <div class="contact-details reveal">
-          <div><span class="detail-icon">⌖</span>
-            <p><b>Address</b><span>Brooklyn, NY<br><small>Street address to be confirmed</small></span></p>
-          </div>
-          <div><span class="detail-icon">☎</span>
-            <p><b>Phone</b><span>To be confirmed</span></p>
-          </div>
-          <div><span class="detail-icon">◷</span>
-            <p><b>Opening hours</b><span>To be confirmed</span></p>
-          </div>
-          <div><span class="detail-icon">✉</span>
-            <p><b>Email</b><span>To be confirmed</span></p>
-          </div>
-          <p class="contact-note">No map is shown because the restaurant’s exact location has not been verified.</p>
-        </div>
-      </div>
-    </section>
+    <section class="feature-pizza section-pad"><div class="feature-inner wrap reveal"><div class="feature-photo"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1200&q=85" alt="Pepperoni pizza with a golden crust" loading="lazy"><span class="photo-note">A GOOD ONE TO PASS AROUND</span></div><div class="feature-copy"><p class="eyebrow light">THE PIE IN THE SPOTLIGHT</p><h2>Make room<br>for <em>one more.</em></h2><p>Pick a favorite from the menu and build a little lineup for the table.</p><a class="button button-cream" href="#menu">Choose Your Pizza <span>↓</span></a><span class="feature-disclaimer">Independent website concept · Demo ordering only</span></div><span class="feature-spark" aria-hidden="true">✳</span></div></section>
+    <section class="values section-pad wrap"><div class="section-heading centered reveal"><p class="eyebrow">THE GOOD STUFF</p><h2>Pizza with a little <em>heart.</em></h2></div><div class="value-grid"><article class="value-card reveal"><span class="value-icon" aria-hidden="true">✳</span><h3>Fresh Ingredients</h3><p>Good things start with thoughtful ingredients.</p></article><article class="value-card reveal"><span class="value-icon" aria-hidden="true">◉</span><h3>Handcrafted Pizza</h3><p>Made by hand, then passed around the table.</p></article><article class="value-card reveal"><span class="value-icon" aria-hidden="true">♡</span><h3>Delicious Flavors</h3><p>Comforting classics and bright, savory bites.</p></article><article class="value-card reveal"><span class="value-icon" aria-hidden="true">☼</span><h3>Made With Passion</h3><p>A little care goes a long way in every slice.</p></article></div></section>
+    <section class="gallery-section section-pad" id="gallery"><div class="wrap"><div class="section-heading reveal"><div><p class="eyebrow">A LITTLE LOOK AROUND</p><h2>Good things, <em>up close.</em></h2></div><p class="section-note">From first slice to last bite.</p></div><div class="gallery-grid">
+      <button class="gallery-item gallery-tall" type="button" data-full="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1500&q=90" aria-label="View a pizza with basil"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=900&q=80" alt="Pizza topped with fresh basil" loading="lazy"><span>THE FIRST SLICE ↗</span></button>
+      <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1400&q=90" aria-label="View a pepperoni pizza"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=800&q=80" alt="Pepperoni pizza fresh from the oven" loading="lazy"><span>OUT OF THE OVEN ↗</span></button>
+      <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1400&q=90" aria-label="View a cheese pizza"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Cheese pizza cut into slices" loading="lazy"><span>PASS IT AROUND ↗</span></button>
+      <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1400&q=90" aria-label="View a pizza on a serving board"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80" alt="Pizza on a wooden serving board" loading="lazy"><span>MADE TO SHARE ↗</span></button>
+      <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1400&q=90" aria-label="View fresh greens"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" alt="Fresh greens and colorful vegetables" loading="lazy"><span>THE FRESH STUFF ↗</span></button>
+    </div></div></section>
+    <section class="contact-section section-pad" id="contact"><div class="wrap contact-wrap"><div class="contact-copy reveal"><p class="eyebrow light">COME ON BY</p><h2>Let’s make it<br><em>a pizza night.</em></h2><p>We’d love to see you at the table. Check back for hours once they’re confirmed.</p><a class="button button-gold" href="tel:+13477991249">Call the Parlor <span>↗</span></a></div><div class="contact-details reveal"><div><span class="detail-icon" aria-hidden="true">⌖</span><p><b>Address</b><a href="https://maps.google.com/?q=192+Duffield+Street+Brooklyn+NY+11201" target="_blank" rel="noopener noreferrer">192 Duffield Street<br>Brooklyn, NY 11201</a></p></div><div><span class="detail-icon" aria-hidden="true">☎</span><p><b>Phone</b><a href="tel:+13477991249">(347) 799-1249</a></p></div><div><span class="detail-icon" aria-hidden="true">◷</span><p><b>Opening hours</b><span>To be confirmed</span></p></div><p class="contact-note">Independent website concept. Business information should be confirmed before publication.</p></div></div></section>
   </main>
-  <footer class="footer">
-    <div class="wrap footer-main"><a class="brand footer-brand" href="#top"><span class="brand-mark"
-          aria-hidden="true">LP</span><span class="brand-name">LITTLE PIZZA<br><i>PARLOR</i></span></a>
-      <p class="footer-tag">Good pizza. Great moments.<br><small>An independent website concept.</small></p>
-      <div class="footer-links"><a href="#menu">Menu</a><a href="#story">Our Story</a><a href="#gallery">Gallery</a><a
-          href="#contact">Contact</a></div>
-      <div class="footer-social"><span>FOLLOW ALONG</span><a href="#contact"
-          aria-label="Instagram details to be confirmed">Instagram ↗</a><a href="#contact"
-          aria-label="Facebook details to be confirmed">Facebook ↗</a></div>
-    </div>
-    <div class="wrap footer-bottom"><span>© <span id="year">2026</span> Little Pizza Parlor · Website concept
-        proposal</span><a href="#top">Back to the top ↑</a></div>
-  </footer>
-  <button class="back-top" aria-label="Back to top">↑</button>
-  <dialog class="lightbox" aria-label="Gallery image viewer"><button class="lightbox-close"
-      aria-label="Close image viewer">×</button><img src="" alt=""></dialog>
+  <footer class="footer"><div class="wrap footer-main"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">LP</span><span class="brand-name">LITTLE PIZZA<br><i>PARLOR</i></span></a><p class="footer-tag">Good pizza. Great moments.<br><small>Independent website concept · Demo only</small></p><div class="footer-links"><a href="#menu">Menu</a><a href="#story">Our Story</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div><div class="footer-social"><span>ORIGINAL ONLINE ORDERING</span><a href="https://order.toasttab.com/online/littlepizzaparlor" target="_blank" rel="noopener noreferrer">Visit Original Ordering Page ↗</a></div></div><div class="wrap footer-bottom"><span>© <span id="year">2026</span> Little Pizza Parlor · Independent concept proposal</span><a href="#top">Back to the top ↑</a></div></footer>
+  <button class="back-top" type="button" aria-label="Back to top">↑</button>
+  <aside class="cart-backdrop" data-cart-close></aside>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true"><div class="cart-head"><div><p class="eyebrow">YOUR LITTLE LINEUP</p><h2 id="cart-title">Your bag <span class="cart-count">0</span></h2></div><button class="icon-button cart-close" type="button" aria-label="Close shopping bag">×</button></div><div class="cart-content"></div><div class="cart-foot"><div class="cart-subtotal"><span>Subtotal</span><b>$0.00</b></div><p>Demo cart only. Orders are not transmitted to the restaurant and payment is not collected.</p><button class="button button-gold cart-checkout" type="button" disabled>Continue to demo checkout <span>→</span></button><a class="original-order-link" href="https://order.toasttab.com/online/littlepizzaparlor" target="_blank" rel="noopener noreferrer">Visit Original Ordering Page ↗</a></div></aside>
+  <div class="cart-toast" role="status" aria-live="polite"></div>
+  <dialog class="checkout-modal" aria-labelledby="checkout-title"><button class="icon-button checkout-close" type="button" aria-label="Close checkout">×</button><div class="checkout-form-view"><p class="eyebrow">DEMO CHECKOUT</p><h2 id="checkout-title">A few details<br>for the <em>table.</em></h2><p class="checkout-disclaimer">This is a frontend demonstration. Your order will not be sent to the restaurant and no payment will be processed.</p><div class="checkout-summary" aria-live="polite"></div><form id="checkout-form"><div class="form-grid"><label>First name<input name="firstName" autocomplete="given-name" required></label><label>Last name<input name="lastName" autocomplete="family-name" required></label></div><label>Phone number<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label><label>Delivery address<input name="address" autocomplete="street-address" required></label><label>Order notes <span>(optional)</span><textarea name="notes" rows="3" placeholder="Anything we should know?"></textarea></label><p class="form-error" role="alert" hidden></p><button class="button button-red checkout-submit" type="submit">Place demo order <span>→</span></button></form></div><div class="checkout-success" hidden><span class="success-mark" aria-hidden="true">✓</span><p class="eyebrow">DEMO COMPLETE</p><h2>Thanks for<br>joining the <em>table.</em></h2><p class="success-copy">This was a demo only. Your order was not sent to Little Pizza Parlor, and no payment was processed.</p><div class="success-summary"></div><button class="button button-red checkout-done" type="button">Back to the menu</button></div></dialog>
+  <dialog class="lightbox" aria-label="Gallery image viewer"><button class="lightbox-close" type="button" aria-label="Close image viewer">×</button><img src="" alt=""></dialog>
 </body>
-
 </html>
